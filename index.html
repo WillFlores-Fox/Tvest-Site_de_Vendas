@@ -1,27 +1,165 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<!--
-header 1: 
-*Logotipo da marca (Esquerda)
-//
-subheader acima da barra de pesquisa:
-*icones do cliente (favoritos, ofertas e etc...)
-*barra de pesquisa (meio)
-//
-*Botão do carrinho (direita)
-header 2:
-*Icones de navegação (cobrindo tudo abaixo)
--->
-<header>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja Minimal</title>
+    <link rel="stylesheet" href="Css/home.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="logo">LojaMinimal</div>
 
-</header>
-<body>
+      <div class="search-container">
+        <input type="text" placeholder="Buscar roupas, estilos, lojas..." />
+        <button>🔍</button>
+      </div>
 
+      <div class="user-actions">
+        <button title="Favoritos">❤️</button>
+        <button title="Lojas Seguidas">🏬</button>
+        <button title="Perfil">👤</button>
+        <button title="Carrinho">🛒</button>
+      </div>
 
-</body>
+      <button class="menu-toggle">☰</button>
+    </header>
+
+    <!-- MENU HAMBURGUER SEMPRE DISPONÍVEL -->
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Masculino</a></li>
+        <li><a href="#">Feminino</a></li>
+        <li><a href="#">Infantil</a></li>
+        <li><a href="#">Unissex</a></li>
+        <li><a href="#">Estilos</a></li>
+        <li><a href="#">Épocas do Ano</a></li>
+        <li><a href="#">Promoções</a></li>
+      </ul>
+    </nav>
+
+    
+
+    <!-- CARROSSEL PRINCIPAL -->
+    <section class="carousel">
+      <div class="slides">
+        <div class="slide">
+          <img src="https://picsum.photos/1200/600?random=1" alt="Oferta 1" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/1200/600?random=2" alt="Oferta 2" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/1200/600?random=3" alt="Oferta 3" />
+        </div>
+      </div>
+      <button class="prev">‹</button>
+      <button class="next">›</button>
+    </section>
+
+    <!-- SEÇÕES DE CONTEÚDO -->
+    <main>
+      <section class="favorites">
+        <h2>Favoritos</h2>
+        <div class="carousel-cards">
+          <div class="card">
+            <img src="https://picsum.photos/200/250?random=4" />
+            <p>Jaqueta Jeans</p>
+          </div>
+          <div class="card">
+            <img src="https://picsum.photos/200/250?random=5" />
+            <p>Tênis Branco</p>
+          </div>
+          <div class="card">
+            <img src="https://picsum.photos/200/250?random=6" />
+            <p>Vestido Floral</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="highlights">
+        <h2>Destaques</h2>
+        <div class="carousel-cards">
+          <div class="card">
+            <img src="https://picsum.photos/200/250?random=7" />
+            <p>Loja A</p>
+          </div>
+          <div class="card">
+            <img src="https://picsum.photos/200/250?random=8" />
+            <p>Loja B</p>
+          </div>
+          <div class="card">
+            <img src="https://picsum.photos/200/250?random=9" />
+            <p>Loja C</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="promotions">
+        <h2>Promoções</h2>
+        <div class="carousel-cards">
+          <div class="card">
+            <img src="https://picsum.photos/200/250?random=10" />
+            <p>-20% Loja X</p>
+          </div>
+          <div class="card">
+            <img src="https://picsum.photos/200/250?random=11" />
+            <p>-30% Loja Y</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="coupons">
+        <h2>Cupons</h2>
+        <div class="my-coupons">
+          <h3>Meus Cupons</h3>
+          <div class="card">
+            <img src="https://picsum.photos/200/250?random=12" />
+            <p>CUPOM10</p>
+          </div>
+        </div>
+        <div class="store-coupons">
+          <h3>Cupons das Lojas</h3>
+          <div class="card">
+            <img src="https://picsum.photos/200/250?random=13" />
+            <p>BLACK50</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="followed-stores">
+        <h2>Lojas Seguidas</h2>
+        <div class="carousel-cards">
+          <div class="card">
+            <img src="https://picsum.photos/200/250?random=14" />
+            <p>Loja 1</p>
+          </div>
+          <div class="card">
+            <img src="https://picsum.photos/200/250?random=15" />
+            <p>Loja 2</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="logo">LojaMinimal</div>
+      <div class="links">
+        <a href="#">Ajuda</a>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Contato</a>
+      </div>
+      <div class="social">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+      <div class="partners">
+        <p>Parceiros: Marca X, Marca Y</p>
+      </div>
+    </footer>
+
+    <script src="JS/script.js"></script>
+  </body>
 </html>
